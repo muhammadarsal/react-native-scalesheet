@@ -15,7 +15,8 @@ const baselineHeight = 680;
 // An array of keys that should be ignored by the create function.
 const ignoredKeys = [
     'flex',
-    'fontWeight'
+    'fontWeight',
+    'elevation'
 ];
 
 // Scales the item based on the screen height and baselineHeight
