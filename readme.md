@@ -115,3 +115,6 @@ Please note that you should **NOT** pass an object as a value if you're going to
 
  - Does this support nested styles and arrays, such as `transform`?
 	 - Yes, this properly goes through your style object and recursively styles all items, using the lesser common style values such as `transform` and `shadowOffset` work just fine.
+
+ - Does this support applications that switch orientation? (Switch between Portrait and Landsacpe)
+     - Currently we do not support re-scaling when orientation switches, we would welcome a PR. For now we recommend locking your application to either Portrait or Landscape mode. **Note**: Most applications only use portrait, so that was my focus. 
