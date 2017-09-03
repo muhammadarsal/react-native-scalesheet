@@ -82,7 +82,11 @@ function create(styles) {
                 scaledStyles[key] = scaleObject(styleValue);
             }
         } else if(!isNaN(styleValue)) {
-            scaledStyles[key] = scale(styleValue);
+            let scaledValue = scale(styleValue); 
+            if(key === "borderWidth" && styleValue > 0) {
+                scaledValue = Math.max(1, scaledValue);
+            }
+            scaledStyles[key] = scaledValue;
         } else if(isNaN(styleValue)) {
             scaledStyles[key] = scaleViewportOrDefault(styleValue);
         }

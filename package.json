@@ -1,6 +1,6 @@
 {
   "name": "react-native-scalesheet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A StyleSheet wrapper for react-native which helps actively scale items for similar display on multiple resolutions. Develop on one resolution without having to worry about the other 4 million android devices out there.",
   "main": "index.js",
   "scripts": {
