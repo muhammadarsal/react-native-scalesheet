@@ -94,7 +94,19 @@ function create(styles) {
     return scaledStyles;
 }
 
+// Obtains a percentage value of the screens current width
+function getScreenWidth(percentage=100) {
+    return screenWidth * (percentage / 100);
+}
+
+// Obtains a percentage value of the screens current height
+function getScreenHeight(precentage=100) {
+    return screenHeight * (percentage / 100);
+}
+
 export default {
     scale,
-    create
+    create,
+    getScreenWidth,
+    getScreenHeight
 };
