@@ -9,15 +9,15 @@ const screenHeight = window.height;
 // The horizontal resolution of the screen.
 const screenWidth = window.width;
 
-// The average resolution of common devices, based on a ~5" mobile screen.
-const baselineHeight = 680;
+// Resolution of iPhone X
+const baselineHeight = 812;
 
 // An array of keys that should be ignored by the create function.
 const ignoredKeys = ["flex", "fontWeight", "elevation"];
 
 // Scales the item based on the screen height and baselineHeight
 function scale(value) {
-  return Math.floor(screenHeight / baselineHeight * value);
+  return Math.floor(Math.sqrt(screenHeight) / Math.sqrt(baselineHeight) * value);
 }
 
 // Scale the items in an array.
